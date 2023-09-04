@@ -1,0 +1,54 @@
+<div dir="ltr">
+    <div style="text-align:center">
+        <font size="6" style="background-color:rgb(255,255,255)" face="arial black, sans-serif"><b style="">
+                <font color="#000000">Shift Hours Report</font>
+            </b>
+        </font>
+    </div>
+    <div style="text-align:center">
+        <font size="4"><u>
+                <?= hoursData.dateRange ?>
+            </u></font>
+    </div>
+    <br>
+    <table
+        style="border-collapse:collapse;color:rgb(51,51,51);font-family:sans-serif;font-size:0.9em;border-radius:10px;overflow:hidden;margin:auto;min-width:400px">
+        <tbody>
+            <tr>
+                <th
+                    style="background-color:rgb(126,155,175);color:rgb(255,255,255);padding:12px;text-transform:uppercase;letter-spacing:1px;border:1px solid rgb(221,221,221);text-align:left">
+                    <font face="verdana, sans-serif">EMPLOYEE</font>
+                </th>
+                <th
+                    style="background-color:rgb(126,155,175);color:rgb(255,255,255);padding:12px;text-transform:uppercase;letter-spacing:1px;border:1px solid rgb(221,221,221);text-align:right">
+                    <font face="verdana, sans-serif">HOURS WORKED</font>
+                </th>
+            </tr>
+            <? for(var i = 0; i < hoursData.data.length; i++) { ?>
+            <tr>
+                <td
+                    style="background-color:rgb(242,242,242);padding:12px;border:1px solid rgb(221,221,221);font-weight:bold">
+                    <font face="verdana, sans-serif">
+                        <?= hoursData.data[i].name ?>
+                    </font>
+                </td>
+                <td
+                    style="background-color:rgb(242,242,242);padding:12px;border:1px solid rgb(221,221,221);font-weight:bold;text-align:right">
+                    <font face="verdana, sans-serif">
+                        <?= hoursData.data[i].hours ?>
+                    </font>
+                </td>
+            </tr>
+            <? } ?>
+            <tr class="gmail-total-row">
+                <td class="gmail-total" colspan="2"
+                    style="background-color:rgb(249,249,249);padding:12px;border:1px solid rgb(221,221,221);font-weight:bold;text-align:right">
+                    <font face="verdana, sans-serif">
+                        <?= hoursData.total ?>
+                    </font>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br class="gmail-Apple-interchange-newline">
+</div>
