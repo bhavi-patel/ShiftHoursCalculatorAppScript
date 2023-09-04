@@ -58,7 +58,7 @@ To setup the script, follow these steps:
 
 ## Author
 
-- Bhavi Patel ([@bhavi-patel](https://github.com/bhavi-patel)) - [patelbhavi9640@gmail.com](mailto:patelbhavi9640@gmail.com)
+- Bhavi Patel ([@bhavi-patel](https://github.com/bhavi-patel))
 
 ## Acknowledgments
 
